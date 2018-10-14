@@ -33,4 +33,14 @@ FREERTOS Notes / Cheat Sheet
 * When more than one task is available at equal priority, each task will be scheduled round-robin
 
 ## Time Measurement and Tick Interrupt
+* configTICK_RATE_HZ sets the tick rate a typical value is 100
+* pdMS_TO_TICKS( macro converts a time specific in milliseconds into a time specified in ticks (note that pdMS_TO_TICKS() cannot be used if configTICK_RATE_HZ is greater than 1000
 
+### Running State
+### Not Running State
+#### BLocked State
+* vTaskDelay() places the calling task into the Blocked state for a fixed number of tick interrupts
+
+#### Suspended State
+#### Ready State
+#### 
